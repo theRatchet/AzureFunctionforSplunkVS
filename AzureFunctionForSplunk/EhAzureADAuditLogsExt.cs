@@ -35,7 +35,7 @@ namespace AzureFunctionForSplunk
 {
     public static class EhAzureADAuditLogsExt
     {
-        [FunctionName("EhAzureADAuditExt")]
+        [FunctionName("EhAzureADAuditLogsExt")]
         public static async Task Run(
             [EventHubTrigger("%input-hub-name-azureadaudit-logs%", Connection = "hubConnection")]string[] messages,
             IBinder blobFaultBinder,
